@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Gramofonske ploče</title>
+  <link rel="icon" type="image/x-icon" href="../ico/favicon.ico">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Kontakt</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰ Meni</label>
+    <nav class="nav">
+      <a href="../index.html"><button>Home</button></a>
+      <a href="uvod.html"><button>Uvod / istorija</button></a>
+      <a href="longplay.html"><button>Long Play (LP)</button></a>
+      <a href="single.html"><button>Single Play (SP)</button></a>
+      <a href="gold.html"><button>Gold ploče</button></a>
+      <a href="platinum.html"><button>Platinum ploče</button></a>
+      <a href="contact.html"><button>Kontakt</button></a>
+    </nav>
+  </div>
+</header>
+
+<main class="content">
+  <h2>Kontakt forma</h2>
+  <p>Ova forma je demonstraciona (nema backend). Validacija je urađena HTML pravilima (required/pattern).</p>
+
+  <form class="contact-form" action="#" method="post">
+    <label>Ime i prezime:
+      <input type="text" name="name" required pattern="[A-Za-zČĆŽŠĐčćžšđ\s]{2,}" title="Samo slova i razmaci">
+    </label>
+
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+
+    <label>Poruka:
+      <textarea name="message" rows="5" required minlength="10" placeholder="Unesite poruku (min 10 karaktera)"></textarea>
+    </label>
+
+    <button type="submit">Pošalji</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 Gramofonske ploče</p>
+</footer>
+</body>
+</html>
